@@ -28,6 +28,17 @@ cd distillation
 pip install -r requirements.txt
 ```
 
+## DT-Visualization
+For DT-Visualization - see `dt-visualization.ipynb` notebook
+
+## Diversity Distillation
+To improve the diversity of your distilled model - use the notebook `diversity_distillation.ipynb`
+
+For generating multiple images using a bash script, use the following python evaluation script
+
+```python
+python evalscripts/diversity_distillation_sdxl.py --distillation_type 'dmd' --prompts_path 'data/coco_30k.csv' --exp_name 'dmd_diversity_distillation' --device 'cuda:0'
+```
 
 ## Citing our work
 

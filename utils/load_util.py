@@ -59,21 +59,6 @@ def load_sdxl_models(distillation_type='dmd', weights_dtype=torch.bfloat16, devi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def load_pipe(distillation_type='dmd', weights_dtype=torch.bfloat16, device='cuda:0'):
     
     basemodel_id = "stabilityai/stable-diffusion-xl-base-1.0"

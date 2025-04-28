@@ -109,9 +109,9 @@ if __name__=='__main__':
                        type=str, required=False, default='dmd')
     
     parser.add_argument('--prompts_path', help='path to csv file with prompts', type=str, 
-                       required=False, default="coco_30k.csv")
+                       required=False, default="data/coco_30k.csv")
     
-    parser.add_argument('--save_path', help='folder where to save images', type=str, required=False, default='turbo-fid-images/')
+    parser.add_argument('--save_path', help='folder where to save images', type=str, required=False, default='eval-images/')
     
     parser.add_argument('--device', help='cuda device to run on', type=str, 
                        required=False, default='cuda:0')
@@ -120,7 +120,7 @@ if __name__=='__main__':
                        type=float, required=False, default=0)
     
     parser.add_argument('--base_guidance_scale', help='guidance scale for base model', 
-                       type=float, required=False, default=7)
+                       type=float, required=False, default=5)
     
     parser.add_argument('--till_case', help='continue generating till case_number', 
                        type=int, required=False, default=9999)
@@ -150,7 +150,7 @@ if __name__=='__main__':
                    required=False, default=None)
 
     parser.add_argument('--same_scheduler', help='if you want to have both base and distilled same schedulers', type=str, 
-                   required=False, default='False')
+                   required=False, default='True')
     
     args = parser.parse_args()
     
